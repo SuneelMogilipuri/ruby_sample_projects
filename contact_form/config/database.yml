@@ -1,0 +1,15 @@
+development: 
+  adapter: mysql2 
+  database: contact_form_dev
+  username: root 
+  password: Welcome2ggk
+test: 
+  adapter: mysql2 
+  database: contact_form_test
+  username: root
+  password: Welcome2ggk
+production: 
+  adapter: mysql2
+  database: contact_form_prod
+  username: root
+  password: Welcome2ggk
