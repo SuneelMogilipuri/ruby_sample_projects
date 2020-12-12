@@ -1,41 +1,44 @@
+<ul>
+	<li><%= link_to 'English', contact_path(locale: :en) %></li>
+	<li><%= link_to 'русский', contact_path(locale: :ru) %></li>
+</ul>
 <div class="container-contact100">
 		<div class="wrap-contact100">
 			<form class="contact100-form validate-form" action="/contact" method="POST">
 				<span class="contact100-form-title">
-					Send Us A Message
+					<%= t 'send_us_a_msg' %>
 				</span>
-
-				<label class="label-input100" for="first-name">Tell us your name *</label>
+				<label class="label-input100" for="first-name"><%= t 'tell_us_your_name' %></label>
 				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type first name">
-					<input id="first-name" class="input100" type="text" name="first_name" placeholder="First name">
+					<input id="first-name" class="input100" type="text" name="first_name" placeholder="<%= t 'first_name' %>" >
 					<span class="focus-input100"></span>
 				</div>
 				<div class="wrap-input100 rs2-wrap-input100 validate-input" data-validate="Type last name">
-					<input class="input100" type="text" name="last_name" placeholder="Last name">
+					<input class="input100" type="text" name="last_name" placeholder="<%= t 'last_name' %>" >
 					<span class="focus-input100"></span>
 				</div>
 
-				<label class="label-input100" for="email">Enter your email *</label>
+				<label class="label-input100" for="email"><%= t 'enter_your_email' %></label>
 				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-					<input id="email" class="input100" type="text" name="email" placeholder="Eg. example@email.com">
+					<input id="email" class="input100" type="text" name="email" placeholder="<%= t 'email_placeholder' %>" >
 					<span class="focus-input100"></span>
 				</div>
 
-				<label class="label-input100" for="phone">Enter phone number</label>
+				<label class="label-input100" for="phone"><%= t 'enter_phone_number' %></label>
 				<div class="wrap-input100">
-					<input id="phone" class="input100" type="text" name="phone_number" placeholder="Eg. +1 800 000000">
+					<input id="phone" class="input100" type="text" name="phone_number" placeholder="<%= t 'phone_placeholder' %>" >
 					<span class="focus-input100"></span>
 				</div>
 
-				<label class="label-input100" for="message">Message *</label>
+				<label class="label-input100" for="message"><%= t 'message' %></label>
 				<div class="wrap-input100 validate-input" data-validate = "Message is required">
-					<textarea id="message" class="input100" name="message" placeholder="Write us a message"></textarea>
+					<textarea id="message" class="input100" name="message" placeholder="<%= t 'write_us_a_message' %>" ></textarea>
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="container-contact100-form-btn">
 					<button class="contact100-form-btn">
-						Send Message
+						<%= t 'send_message' %>
 					</button>
 				</div>
 			</form>
@@ -48,11 +51,11 @@
 
 					<div class="flex-col size2">
 						<span class="txt1 p-b-20">
-							Address
+							<%= t 'address' %>
 						</span>
 
 						<span class="txt2">
-							Mada Center 8th floor, 379 Hudson St, New York, NY 10018 US
+							<%= t 'full_address' %>	
 						</span>
 					</div>
 				</div>
@@ -64,7 +67,7 @@
 
 					<div class="flex-col size2">
 						<span class="txt1 p-b-20">
-							Lets Talk
+							<%= t 'lets_talk' %>
 						</span>
 
 						<span class="txt3">
@@ -80,7 +83,7 @@
 
 					<div class="flex-col size2">
 						<span class="txt1 p-b-20">
-							General Support
+							<%= t 'general_support' %>
 						</span>
 
 						<span class="txt3">
