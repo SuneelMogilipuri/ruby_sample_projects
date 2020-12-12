@@ -30,4 +30,18 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  send_us_a_msg: "Send Us A Message"
+  tell_us_your_name: "TELL US YOUR NAME *"
+  first_name: "First name"
+  last_name: "Last name"
+  enter_your_email: "ENTER YOUR EMAIL *"
+  email_placeholder: "Eg. example@email.com"
+  enter_phone_number: "ENTER PHONE NUMBER"
+  phone_placeholder: "Eg. +1800 00000"
+  message: "MESSAGE *"
+  write_us_a_message: "Write us a message"
+  send_message: "Send Message"
+  address: "Address"
+  full_address: "Mada Center 8th floor, 379 Hudson St, New York, NY 10018 US"
+  lets_talk: "Lets Talk"
+  general_support: "General Support"
