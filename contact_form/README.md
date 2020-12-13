@@ -24,3 +24,4 @@ Things you may want to cover:
         - rake db:create
         - rake db:migrate
         - rails s
+        - run the application and goto /contact page from url 
